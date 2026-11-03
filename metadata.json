@@ -1,0 +1,6 @@
+{
+  "name": "Rocket League Professional Master Engine",
+  "description": "High-performance Python Qt6 & Lua gaming physics engine, Layer 0 keybind manager, TAInput.ini profile editor, and Logitech G HUB launcher suite.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

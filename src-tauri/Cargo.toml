@@ -1,0 +1,25 @@
+[package]
+name = "rl-pro-master-engine"
+version = "2.0.0"
+description = "Rocket League Professional Master Engine - Standalone Windows 11 Desktop Application"
+authors = ["Senior Systems Engineer"]
+edition = "2021"
+
+[lib]
+name = "app_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.0", features = [] }
+
+[dependencies]
+tauri = { version = "2.0", features = ["tray-icon"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.38", features = ["full"] }
+reqwest = { version = "0.12", features = ["stream", "json"] }
+futures-util = "0.3"
+boxcars = { version = "0.10", default-features = false }
+base64 = "0.22"
+sha2 = "0.10"
+uuid = { version = "1.8", features = ["v4"] }

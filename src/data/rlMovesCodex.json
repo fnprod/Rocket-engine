@@ -1,0 +1,277 @@
+[
+  {
+    "id": "speedflip_kickoff",
+    "name": "Speedflip Kickoff",
+    "nameAr": "انطلاق السبييد فليب فائق السرعة",
+    "category": "Kickoffs",
+    "difficulty": "Pro RLCS",
+    "targetAngleDeg": 35,
+    "angleToleranceDeg": [30, 42],
+    "crossAxisTorqueLeakageMaxPercent": 5.0,
+    "optimalVelocityUu": 2300,
+    "description": "Sub-millisecond diagonal flip cancel maintaining forward throttle boost through a 30° to 42° cone. Minimizes cross-axis torque leakage to reach supersonic 2300 uu/s before first kickoff contact.",
+    "descriptionAr": "إلغاء فليب قطري سريع بدقة أجزاء الملي ثانية مع استمرار دفع البوست داخل مخروط 30 إلى 42 درجة.",
+    "keySequence": ["W", "LShift (Boost)", "Space (Jump 1)", "D / E (Pitch 35°)", "Space (Jump 2)", "S (Flip Cancel 600ms)", "LAlt (Powerslide)"],
+    "timings": {
+      "firstJumpSleepMs": 50,
+      "secondJumpDelayMs": 60,
+      "cancelHoldMs": 600,
+      "airRollDurationMs": 250,
+      "powerslideDurationMs": 180
+    },
+    "videoPath": "/mechanics/speedflip_kickoff.webm",
+    "polarSampleTrace": [
+      { "steer": 0.0, "pitch": 1.0, "roll": 0.0 },
+      { "steer": 0.58, "pitch": 0.82, "roll": 0.35 },
+      { "steer": 0.62, "pitch": 0.78, "roll": 0.42 },
+      { "steer": 0.12, "pitch": -0.98, "roll": 0.08 },
+      { "steer": 0.02, "pitch": -1.0, "roll": 0.01 },
+      { "steer": 0.0, "pitch": 0.0, "roll": 0.0 }
+    ]
+  },
+  {
+    "id": "diagonal_fast_kickoff",
+    "name": "Diagonal Fast Kickoff",
+    "nameAr": "انطلاق قطري سريع",
+    "category": "Kickoffs",
+    "difficulty": "Advanced",
+    "targetAngleDeg": 45,
+    "angleToleranceDeg": [40, 50],
+    "crossAxisTorqueLeakageMaxPercent": 7.5,
+    "optimalVelocityUu": 2220,
+    "description": "Standard 45-degree diagonal roll kickoff executing clean pad pickup line with zero boost waste at 2220 uu/s.",
+    "descriptionAr": "انطلاق قطري كلاسيكي بزاوية 45 درجة مع التقاط خط البوست بدقة 2220 uu/s.",
+    "keySequence": ["W", "LShift", "Space", "D + W", "Space", "LAlt"],
+    "timings": {
+      "firstJumpSleepMs": 65,
+      "secondJumpDelayMs": 85,
+      "cancelHoldMs": 480,
+      "airRollDurationMs": 220,
+      "powerslideDurationMs": 150
+    },
+    "videoPath": "/mechanics/diagonal_fast_kickoff.webm",
+    "polarSampleTrace": [
+      { "steer": 0.0, "pitch": 1.0, "roll": 0.0 },
+      { "steer": 0.707, "pitch": 0.707, "roll": 0.0 },
+      { "steer": 0.707, "pitch": 0.707, "roll": 0.1 },
+      { "steer": 0.2, "pitch": 0.1, "roll": 0.0 }
+    ]
+  },
+  {
+    "id": "fast_aerial",
+    "name": "Fast Aerial Impulse",
+    "nameAr": "صعود هوائي فائق السرعة",
+    "category": "Aerials",
+    "difficulty": "Grand Champion",
+    "targetAngleDeg": 90,
+    "angleToleranceDeg": [85, 95],
+    "crossAxisTorqueLeakageMaxPercent": 4.0,
+    "optimalVelocityUu": 1850,
+    "description": "Double-jump aerial impulse with simultaneous pitch-back, neutral release on second jump to eliminate backward backflip deadzone hop, and continuous boost burn.",
+    "descriptionAr": "صعود هوائي بضغطتي قفز مع توجيه حاد للخلف ثم إرجاع الذراع إلى الصفر لمنع فليب الإلغاء العكسي.",
+    "keySequence": ["S (Pitch Back)", "Space (Jump 1)", "LShift (Boost)", "S (Neutral Release)", "Space (Jump 2)", "W/S (Pitch Control)"],
+    "timings": {
+      "firstJumpSleepMs": 150,
+      "secondJumpDelayMs": 50,
+      "cancelHoldMs": 450,
+      "airRollDurationMs": 0,
+      "powerslideDurationMs": 0
+    },
+    "videoPath": "/mechanics/fast_aerial.webm",
+    "polarSampleTrace": [
+      { "steer": 0.0, "pitch": -0.85, "roll": 0.0 },
+      { "steer": 0.0, "pitch": -1.0, "roll": 0.0 },
+      { "steer": 0.0, "pitch": -0.1, "roll": 0.0 },
+      { "steer": 0.0, "pitch": 0.2, "roll": 0.0 }
+    ]
+  },
+  {
+    "id": "double_tap_air_roll",
+    "name": "Double-Tap Air Roll Shot",
+    "nameAr": "تسديدة دبل تاب مع دوران هوائي",
+    "category": "Aerials",
+    "difficulty": "Pro RLCS",
+    "targetAngleDeg": 45,
+    "angleToleranceDeg": [42, 48],
+    "crossAxisTorqueLeakageMaxPercent": 4.5,
+    "optimalVelocityUu": 2080,
+    "description": "High-altitude backboard rebound alignment utilizing directional air roll to stiffen car chassis recoil upon ball impact.",
+    "descriptionAr": "محاذاة ارتداد الكرة من العارضة الخلفية باستخدام الدوران الجوي لتثبيت شاسيه السيارة عند الاصطدام.",
+    "keySequence": ["Space", "LShift", "E (Air Roll R)", "W (Tilt)", "Space (Jump 2)", "S (Shot Angle)"],
+    "timings": {
+      "firstJumpSleepMs": 100,
+      "secondJumpDelayMs": 80,
+      "cancelHoldMs": 350,
+      "airRollDurationMs": 400,
+      "powerslideDurationMs": 0
+    },
+    "videoPath": "/mechanics/double_tap_air_roll.webm",
+    "polarSampleTrace": [
+      { "steer": 0.0, "pitch": 0.7, "roll": 0.7 },
+      { "steer": 0.1, "pitch": 0.8, "roll": 0.8 },
+      { "steer": 0.0, "pitch": 0.3, "roll": 0.4 }
+    ]
+  },
+  {
+    "id": "forty_five_flick",
+    "name": "45-Degree Diagonal Flick",
+    "nameAr": "فليك قطري بزاوية 45 درجة",
+    "category": "Flicks",
+    "difficulty": "Advanced",
+    "targetAngleDeg": 45,
+    "angleToleranceDeg": [40, 48],
+    "crossAxisTorqueLeakageMaxPercent": 4.0,
+    "optimalVelocityUu": 1680,
+    "description": "Precision dribble scoop utilizing car roof hitboxes to impart instantaneous 115+ km/h forward ball launch.",
+    "descriptionAr": "رمي الكرة من سقف السيارة بزاوية 45 درجة لتحقيق سرعة انطلاق تتجاوز 115 كم/س.",
+    "keySequence": ["Space", "A (Turn 45°)", "S + D (Diagonal Backflip)", "Space (Dodge)"],
+    "timings": {
+      "firstJumpSleepMs": 120,
+      "secondJumpDelayMs": 110,
+      "cancelHoldMs": 500,
+      "airRollDurationMs": 180,
+      "powerslideDurationMs": 0
+    },
+    "videoPath": "/mechanics/forty_five_flick.webm",
+    "polarSampleTrace": [
+      { "steer": -0.707, "pitch": 0.0, "roll": 0.0 },
+      { "steer": 0.707, "pitch": -0.707, "roll": 0.3 },
+      { "steer": 0.1, "pitch": -0.9, "roll": 0.1 }
+    ]
+  },
+  {
+    "id": "breezi_flick",
+    "name": "Breezi Flick (Tornado Spin)",
+    "nameAr": "بريزي فليك (تورنيدو سبين)",
+    "category": "Flicks",
+    "difficulty": "Pro RLCS",
+    "targetAngleDeg": 225,
+    "angleToleranceDeg": [218, 232],
+    "crossAxisTorqueLeakageMaxPercent": 6.0,
+    "optimalVelocityUu": 1750,
+    "description": "Continuous rotational scoop combining Air Roll Right with Left Yaw into a 180-degree inverted Musty flick finish.",
+    "descriptionAr": "دوران حلزوني تورنيدو يجمع بين الدوران الجوي والتوجيه المعاكس ثم إنهاء بمستي فليك مقلوب.",
+    "keySequence": ["Space", "E (Air Roll R) + A (Yaw L)", "S (Pitch Invert)", "Space (Backflip Launch)"],
+    "timings": {
+      "firstJumpSleepMs": 140,
+      "secondJumpDelayMs": 130,
+      "cancelHoldMs": 650,
+      "airRollDurationMs": 550,
+      "powerslideDurationMs": 0
+    },
+    "videoPath": "/mechanics/breezi_flick.webm",
+    "polarSampleTrace": [
+      { "steer": -0.85, "pitch": 0.0, "roll": 0.85 },
+      { "steer": -0.6, "pitch": -0.8, "roll": 0.9 },
+      { "steer": 0.0, "pitch": -1.0, "roll": 0.0 }
+    ]
+  },
+  {
+    "id": "musty_flick",
+    "name": "Musty Flick (Inverted Pitch)",
+    "nameAr": "موستي فليك (الميلان العكسي)",
+    "category": "Flicks",
+    "difficulty": "Advanced",
+    "targetAngleDeg": 110,
+    "angleToleranceDeg": [105, 115],
+    "crossAxisTorqueLeakageMaxPercent": 5.0,
+    "optimalVelocityUu": 1520,
+    "description": "Downward car nose tilt exceeding 90 degrees that causes standard backward dodge to propel the vehicle forward with explosive ball momentum.",
+    "descriptionAr": "إمالة مقدمة السيارة لأسفل بزاوية تتجاوز 90 درجة مما يحول الفليب الخلفي إلى قوة دفع أمامية متفجرة.",
+    "keySequence": ["Space", "W (Pitch Forward 110°)", "S (Backflip Impulse)", "Space (Dodge)"],
+    "timings": {
+      "firstJumpSleepMs": 130,
+      "secondJumpDelayMs": 120,
+      "cancelHoldMs": 550,
+      "airRollDurationMs": 0,
+      "powerslideDurationMs": 0
+    },
+    "videoPath": "/mechanics/musty_flick.webm",
+    "polarSampleTrace": [
+      { "steer": 0.0, "pitch": 0.95, "roll": 0.0 },
+      { "steer": 0.0, "pitch": 1.0, "roll": 0.0 },
+      { "steer": 0.0, "pitch": -1.0, "roll": 0.0 }
+    ]
+  },
+  {
+    "id": "half_flip_180",
+    "name": "Half-Flip 180° Direct Cancel",
+    "nameAr": "هاف فليب 180 درجة مع الإلغاء المباشر",
+    "category": "Recoveries",
+    "difficulty": "Standard",
+    "targetAngleDeg": 180,
+    "angleToleranceDeg": [176, 184],
+    "crossAxisTorqueLeakageMaxPercent": 3.0,
+    "optimalVelocityUu": 1420,
+    "description": "Instantaneous 180-degree momentum reversal via backflip cancelled with forward pitch + air roll recovery.",
+    "descriptionAr": "عكس اتجاه الحركة بـ 180 درجة فوراً عبر فليب خلفي مع إلغاء أمامي ودوران هوائي.",
+    "keySequence": ["S", "Space (Jump 1)", "Space (Jump 2 Backflip)", "W (Cancel Hold 500ms)", "E or Q (Air Roll 180°)"],
+    "timings": {
+      "firstJumpSleepMs": 90,
+      "secondJumpDelayMs": 70,
+      "cancelHoldMs": 500,
+      "airRollDurationMs": 280,
+      "powerslideDurationMs": 100
+    },
+    "videoPath": "/mechanics/half_flip_180.webm",
+    "polarSampleTrace": [
+      { "steer": 0.0, "pitch": -1.0, "roll": 0.0 },
+      { "steer": 0.0, "pitch": 1.0, "roll": 0.0 },
+      { "steer": 0.0, "pitch": 0.5, "roll": 1.0 },
+      { "steer": 0.0, "pitch": 0.0, "roll": 0.0 }
+    ]
+  },
+  {
+    "id": "chain_wavedash",
+    "name": "Chain Wave-Dash 1000Hz",
+    "nameAr": "ويف داش متسلسل بتردد 1000Hz",
+    "category": "Recoveries",
+    "difficulty": "Pro RLCS",
+    "targetAngleDeg": 15,
+    "angleToleranceDeg": [12, 18],
+    "crossAxisTorqueLeakageMaxPercent": 4.0,
+    "optimalVelocityUu": 2260,
+    "description": "Ground friction wave-dash sequence chaining micro-jumps and handbrake slide pulses to reach supersonic without using boost.",
+    "descriptionAr": "سلسلة ويف داش أرضية سريعة تعتمد على قفزات ميكروية ونبضات الهاند بريك للوصول إلى السوبر سونيك بدون صرف البوست.",
+    "keySequence": ["Space (Micro Jump)", "E (Tilt 15°)", "LAlt (Hold Powerslide)", "Space (Dodge)", "W (Sustain)"],
+    "timings": {
+      "firstJumpSleepMs": 30,
+      "secondJumpDelayMs": 40,
+      "cancelHoldMs": 300,
+      "airRollDurationMs": 120,
+      "powerslideDurationMs": 240
+    },
+    "videoPath": "/mechanics/chain_wavedash.webm",
+    "polarSampleTrace": [
+      { "steer": 0.2, "pitch": 0.1, "roll": 0.25 },
+      { "steer": -0.2, "pitch": -0.1, "roll": -0.25 },
+      { "steer": 0.0, "pitch": 0.0, "roll": 0.0 }
+    ]
+  },
+  {
+    "id": "wall_to_air_dash",
+    "name": "Wall-to-Air Quick Dash",
+    "nameAr": "داش الحائط والانطلاق الهوائي",
+    "category": "Recoveries",
+    "difficulty": "Grand Champion",
+    "targetAngleDeg": 75,
+    "angleToleranceDeg": [70, 80],
+    "crossAxisTorqueLeakageMaxPercent": 5.5,
+    "optimalVelocityUu": 2150,
+    "description": "Lip transition dash popping the vehicle cleanly off the wall curve with auto-aligned horizontal orientation.",
+    "descriptionAr": "انطلاق سريع من منحنى الحائط يحرر السيارة في الهواء باتجاه أفقي مثالي بدون فقدان الزخم.",
+    "keySequence": ["W", "Space (Wall Tap)", "E (Air Roll Snap)", "LShift (Boost Burn)"],
+    "timings": {
+      "firstJumpSleepMs": 45,
+      "secondJumpDelayMs": 50,
+      "cancelHoldMs": 350,
+      "airRollDurationMs": 180,
+      "powerslideDurationMs": 90
+    },
+    "videoPath": "/mechanics/wall_to_air_dash.webm",
+    "polarSampleTrace": [
+      { "steer": 0.3, "pitch": 0.6, "roll": 0.5 },
+      { "steer": 0.0, "pitch": 0.8, "roll": 0.1 }
+    ]
+  }
+]

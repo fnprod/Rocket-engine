@@ -1,0 +1,7 @@
+{
+  "deadzone": 0.05,
+  "curve_type": "power_lut_direct",
+  "exponent": 1.85,
+  "threshold": 0.80,
+  "multiplier": 1.45
+}
