@@ -1,10 +1,10 @@
 # FNPro Master Engine (Windows 11 Native Architecture)
 
 **Target Platform:** Windows 11 Pro 64-bit  
-**Core Runtime:** Tauri v2 (Rust Backend MSVC) + React 19 / TypeScript 5.8 / Vite / Tailwind CSS  
+**Core Runtime:**  React 19 / TypeScript 5.8 / Vite / Tailwind CSS  
 **Engine Polling:** DirectInput 1000Hz (1.0ms resolution)  
-**Author:** userfn-git (`fnprospace@gmail.com`)  
-**Repository:** [https://github.com/uerfn-git/Rocket-engine](https://github.com/fnprod/Rocket-engine))
+**Author:** fnprod(`fnprospace@gmail.com`)  
+**Repository:** (https://github.com/fnprod/Rocket-engine))
 
 ---
 
@@ -54,15 +54,6 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\install_dependencies.ps1
 ```
 
-To run in development mode:
-```powershell
-npm run tauri dev
-```
-
-To build a standalone production release executable (.exe / MSI):
-```powershell
-npm run tauri build
-```
 
 ---
 
@@ -70,11 +61,11 @@ npm run tauri build
 
 ```bash
 git init
-git config user.name "userfn-git"
+git config user.name "fnprod"
 git config user.email "fnprospace@gmail.com"
 git add .
 git commit -m "feat: complete FNPro Master Engine v4.2.0 Windows 11 native build"
 git branch -M main
-git remote add origin https://github.com/userfn-git/FNProMasterEngine.git
+git remote add origin https://github.com/fnprod/Rocket-engine
 git push -u origin main
 ```
