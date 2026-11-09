@@ -4,7 +4,7 @@
 **Core Runtime:** Tauri v2 (Rust Backend MSVC) + React 19 / TypeScript 5.8 / Vite / Tailwind CSS  
 **Engine Polling:** DirectInput 1000Hz (1.0ms resolution)  
 **Author:** userfn-git (`fnprospace@gmail.com`)  
-**Repository:** [https://github.com/userfn-git/FNProMasterEngine.git](https://github.com/userfn-git/FNProMasterEngine.git)
+**Repository:** [https://github.com/uerfn-git/Rocket-engine](https://github.com/fnprod/Rocket-engine))
 
 ---
 
